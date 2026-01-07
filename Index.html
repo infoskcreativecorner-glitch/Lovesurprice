@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A romantic surprise for someone special">
+    <title>A Special Surprise 💖</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts - Romantic Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Page 1: Surprise Screen -->
+    <div id="surpriseScreen" class="screen active">
+        <!-- Floating hearts background animation -->
+        <div class="floating-hearts">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+
+        <!-- Center Heart Balloon -->
+        <div id="heartBalloon" class="heart-balloon">
+            <div class="balloon-heart">
+                <svg viewBox="0 0 32 29.6">
+                    <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                </svg>
+            </div>
+            <div class="balloon-string"></div>
+            <p class="click-hint">Click Me! 💕</p>
+        </div>
+
+        <!-- Fireworks container (hidden initially) -->
+        <div id="fireworksContainer" class="fireworks-container"></div>
+    </div>
+
+    <!-- Page 2: Love Message Screen -->
+    <div id="messageScreen" class="screen">
+        <!-- Subtle background hearts -->
+        <div class="floating-hearts subtle">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+
+        <div class="message-container">
+            <h1 class="love-message">
+                I <span class="heart-icon">❤️</span> LOVE YOU
+            </h1>
+            <div class="sparkle-effect">
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+                <span class="sparkle"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Romantic Message Screen -->
+    <div id="romanticMessageScreen" class="screen">
+        <!-- Floating hearts and roses -->
+        <div class="floating-hearts romantic">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+
+        <div class="romantic-roses">
+            <div class="rose"></div>
+            <div class="rose"></div>
+            <div class="rose"></div>
+            <div class="rose"></div>
+        </div>
+
+        <div class="romantic-content">
+            <h2 class="romantic-text">To my love of my life…</h2>
+            <button id="galleryBtn" class="cta-button">
+                <span class="btn-heart">💖</span>
+                See my more love here
+                <span class="btn-heart">💖</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Page 4: Photo Gallery Screen -->
+    <div id="galleryScreen" class="screen">
+        <!-- Animated background -->
+        <div class="gallery-background">
+            <div class="floating-hearts gallery-hearts">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+
+            <!-- Falling petals -->
+            <div class="falling-petals">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+        </div>
+
+        <div class="container gallery-container">
+            <h2 class="gallery-title">Our Beautiful Moments 💕</h2>
+
+            <div class="row g-4">
+                <!-- Photo Card 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=400&h=400&fit=crop"
+                                alt="Romantic moment 1" class="photo-img">
+                        </div>
+                        <div class="photo-description">
+                            <p>Every moment with you feels like a beautiful dream come true 💫</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Card 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=400&fit=crop"
+                                alt="Romantic moment 2" class="photo-img">
+                        </div>
+                        <div class="photo-description">
+                            <p>Your smile lights up my world like nothing else ever could ✨</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Card 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400&h=400&fit=crop"
+                                alt="Romantic moment 3" class="photo-img">
+                        </div>
+                        <div class="photo-description">
+                            <p>Together, we create memories that will last forever 💑</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Card 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=400&h=400&fit=crop"
+                                alt="Romantic moment 4" class="photo-img">
+                        </div>
+                        <div class="photo-description">
+                            <p>You are my today and all of my tomorrows 🌹</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Card 5 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=400&h=400&fit=crop"
+                                alt="Romantic moment 5" class="photo-img">
+                        </div>
+                        <div class="photo-description">
+                            <p>In your arms, I have found my home and my happiness 🏡</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Card 6 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=400&h=400&fit=crop"
+                                alt="Romantic moment 6" class="photo-img">
+                        </div>
+                        <div class="photo-description">
+                            <p>Every love story is beautiful, but ours is my favorite 📖</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Card 7 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=400&h=400&fit=crop"
+                                alt="Romantic moment 7" class="photo-img">
+                        </div>
+                        <div class="photo-description">
+                            <p>You make my heart skip a beat every single day 💓</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Card 8 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=400&h=400&fit=crop"
+                                alt="Romantic moment 8" class="photo-img">
+                        </div>
+                        <div class="photo-description">
+                            <p>Forever grateful for the love we share together 🌟</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Bottom Button -->
+            <div class="text-center mt-5 mb-4">
+                <button id="loveLetterBtn" class="cta-button gallery-cta">
+                    <span class="btn-heart">❤️</span>
+                    Click Me
+                    <span class="btn-heart">❤️</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 5: Love Letter Screen -->
+    <div id="loveLetterScreen" class="screen">
+        <!-- Animated background -->
+        <div class="letter-background">
+            <div class="floating-hearts letter-hearts">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+
+            <!-- Falling petals -->
+            <div class="falling-petals">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+        </div>
+
+        <div class="container letter-container">
+            <div class="love-letter">
+                <div id="letterText" class="letter-text"></div>
+                <div id="letterSignature" class="letter-signature" style="display: none;">
+                    Forever yours ❤️
+                </div>
+                <div id="letterButton" class="letter-button-container" style="display: none;">
+                    <button id="questionBtn" class="cta-button">
+                        <span class="btn-heart">💖</span>
+                        See Me
+                        <span class="btn-heart">💖</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 6: Question Screen -->
+    <div id="questionScreen" class="screen">
+        <!-- Animated background -->
+        <div class="question-background">
+            <div class="floating-hearts question-hearts">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+
+            <!-- Falling petals -->
+            <div class="falling-petals">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <h1 class="question-text">Will you be mine forever?</h1>
+            <div class="question-buttons">
+                <button class="yes-button yes-1">
+                    YES ❤️
+                </button>
+                <button class="yes-button yes-2">
+                    YES 💖
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
